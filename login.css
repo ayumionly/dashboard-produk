@@ -1,0 +1,580 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f2ec;
+    color: #222;
+}
+
+
+/* =========================
+   BRAND / LEFT SIDE
+========================= */
+
+.auth-brand {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.brand-content {
+    max-width: 500px;
+}
+
+.brand-logo {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 7px;
+
+    margin-bottom: 10px;
+}
+
+.brand-logo span {
+    display: block;
+
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: normal;
+
+    margin-top: 5px;
+}
+
+.gold-line {
+    width: 70px;
+    height: 3px;
+
+    background: #c5a059;
+
+    margin: 25px 0;
+}
+
+.brand-content h1 {
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.brand-content p {
+    max-width: 450px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #ddd;
+}
+
+
+/* =========================
+   FORM SIDE
+========================= */
+
+.auth-form {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 30px;
+
+    background: #f8f6f1;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 430px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+
+    border: 1px solid #e8e1d5;
+}
+
+
+/* =========================
+   MOBILE LOGO
+========================= */
+
+.mobile-logo {
+    display: none;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.mobile-logo h1 {
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    letter-spacing: 5px;
+}
+
+.mobile-logo span {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #9c7a3c;
+}
+
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card {
+    width: 100%;
+}
+
+.login-card > h1 {
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+.login-card > p {
+    text-align: center;
+
+    color: #888;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   LOGO YSL
+========================= */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px 0 25px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+
+    border: 2px solid #c5a059;
+
+    padding: 7px;
+}
+
+
+/* =========================
+   WELCOME BOX
+========================= */
+
+.login-card section {
+    background: #f8f5ef;
+
+    padding: 18px;
+
+    margin-bottom: 25px;
+
+    border-left: 4px solid #c5a059;
+
+    border-radius: 8px;
+}
+
+.login-card section p {
+    color: #777;
+
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+.login-card section h1 {
+    font-family: Georgia, serif;
+
+    font-size: 19px;
+
+    margin-bottom: 8px;
+}
+
+.login-card section em {
+    color: #9c7a3c;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.login-card form {
+    margin-bottom: 12px;
+}
+
+.login-card label {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #333;
+}
+
+.login-card input[type="email"],
+.login-card input[type="Email"],
+.login-card input[type="password"],
+.login-card input[type="Password"] {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #fafafa;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.login-card input:focus {
+    border-color: #c5a059;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(197, 160, 89, 0.12);
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-card button[type="submit"] {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #111;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-card button[type="submit"]:hover {
+    background: #c5a059;
+
+    color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 20px 0;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #ddd;
+}
+
+
+/* =========================
+   GOOGLE BUTTON
+========================= */
+
+.google-btn {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.google-btn:hover {
+    background: #f5f5f5;
+
+    border-color: #bbb;
+
+    transform: translateY(-2px);
+}
+
+.google-btn i {
+    font-style: normal;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* =========================
+   FORGOT PASSWORD
+========================= */
+
+.forgot {
+    text-align: right !important;
+
+    color: #9c7a3c !important;
+
+    font-size: 13px !important;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px !important;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   REMEMBER ME
+========================= */
+
+.remember {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+.remember input {
+    width: 16px;
+    height: 16px;
+
+    accent-color: #111;
+
+    cursor: pointer;
+}
+
+.remember label {
+    margin: 0;
+
+    font-size: 13px;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .auth-brand {
+        padding: 35px;
+    }
+
+    .brand-content h1 {
+        font-size: 35px;
+    }
+
+    .login-box {
+        padding: 30px;
+    }
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        display: block;
+    }
+
+    .auth-brand {
+        display: none;
+    }
+
+    .auth-form {
+        width: 100%;
+        min-height: 100vh;
+
+        padding: 25px 15px;
+    }
+
+    .login-box {
+        max-width: 430px;
+
+        padding: 30px 22px;
+
+        border-radius: 15px;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .login-card > h1 {
+        font-size: 23px;
+    }
+
+    .logo img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+
+/* =========================
+   HP KECIL
+========================= */
+
+@media (max-width: 400px) {
+
+    .auth-form {
+        padding: 15px 10px;
+    }
+
+    .login-box {
+        padding: 25px 18px;
+    }
+
+    .mobile-logo h1 {
+        font-size: 25px;
+    }
+
+    .login-card > h1 {
+        font-size: 20px;
+    }
+
+    .login-card section {
+        padding: 15px;
+    }
+
+    .login-card section h1 {
+        font-size: 17px;
+    }
+
+    .login-card input {
+        padding: 12px;
+    }
+}

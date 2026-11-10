@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="layout">
+
+     <aside class="sidebar">
+        <h2>Yves Saint Laurent</h2>
+
+    <ul>
+        <li><a href="#dashboard">📊 Dashboard</a></li>
+        <li><a href="#produk">📦 Produk</a></li>
+        <li><a href="#kategori">🏷️ Kategori</a></li>
+        <li><a href="#pesanan">🛒 Pesanan</a></li>
+        <li><a href="#customer">👥 Customer</a></li>
+        <li><a href="#laporan">📄 Laporan</a></li>
+        <li><a href="#logout">🚪 Logout</a></li>
+    </ul>
+
+     </aside>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari Produk">
+        <button onclick="searchProduct()">🔍</button>
+    </div>
+
+    <main class="main">
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>📦 Total Produk</h2>
+                <p>200</p>
+            </div>
+
+            <div class="card">
+                <h2>👥 Customer</h2>
+                <p>19.130</p>
+            </div>
+
+            <div class="card">
+                <h2>🛒 Pesanan</h2>
+                <p>550</p>
+            </div>
+
+            <div class="card">
+                <h2>💵 Pendapatan</h2>
+                <p>Rp90 Juta</p>
+            </div>
+
+        </div>
+
+    <section class="dashboard" id="dashboard">
+        <div class="produk">
+            <h2>Data Produk</h2>
+
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Produk</th>
+                    <th>Kategori</th>
+                    <th>Harga</th>
+                    <th>Stok</th>
+                    <th>Aksi</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Pure Shots Night Reboot Serum</td>
+                    <td>Skincare</td>
+                    <td>Rp1.600.000</td>
+                    <td>50</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Hapus</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Airthin UV Defender SPF 50+ /PA++++</td>
+                    <td>Skincare</td>
+                    <td>Rp1.400.000</td>
+                    <td>50</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Hapus</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Or Rouge La Creme Riche (50ml)</td>
+                    <td>Skincare</td>
+                    <td>Rp7.250.000</td>
+                    <td>50</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Hapus</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Kemeja Sutra</td>
+                    <td>Fashion & Aksesoris</td>
+                    <td>Rp25.000.000</td>
+                    <td>50</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Hapus</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Saint Laurent Virgin Wool Blazer</td>
+                    <td>Fashion & Aksesoris</td>
+                    <td>Rp49.000.000</td>
+                    <td>50</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Hapus</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Shoulder Bag</td>
+                    <td>Fashion & Aksesoris</td>
+                    <td>Rp22.150.000</td>
+                    <td>50</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Hapus</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Touche Eclat Glow-Pact Cushion</td>
+                    <td>Make Up</td>
+                    <td>Rp1.300.000</td>
+                    <td>50</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Hapus</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Loveshine Wet Shine Lipstik</td>
+                    <td>Make Up</td>
+                    <td>Rp750.000</td>
+                    <td>50</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Hapus</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>All Hours Foundation</td>
+                    <td>Make Up</td>
+                    <td>Rp1.250.000</td>
+                    <td>50</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Hapus</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+
+<section class="produk" id="produk">
+    <div class="product-card">
+        <img src="images/g1.jpg">
+        <button>🛒</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/g2.jpg">
+        <button>🛒</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/g3.jpg">
+        <button>🛒</button>
+    </div>
+</section>
+
+<section class="kategori" id="kategori">
+        
+        <h1>Skincare</h1>
+
+        <div class="kategori-container">
+        
+        <div class="product-card">
+            <img src="images/serum.jpg">
+            <h3>Pure Shots Night Reboot Serum</h3>
+            <p>Rp1.600.000</p>
+            <button>🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/sunscreen.jpg">
+            <h3>Airthin UV Defender SPF 50+ /PA++++</h3>
+            <p>Rp1.400.000</p>
+            <button>🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/creme.jpg">
+            <h3>Or Rouge La Creme Riche (50 ml)</h3>
+            <p>Rp7.250.000</p>
+            <button>🛒</button>
+        </div>  
+
+        </div>
+
+        <h1>Fashion & Aksesoris</h1>
+
+        <div class="kategori-container">
+
+        <div class="product-card">
+            <img src="images/kemeja.jpg">
+            <h3>Kemeja Sutra</h3>
+            <p>Rp25.000.000</p>
+            <button>🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/blazer.jpg">
+            <h3>Saint Laurent Virgin Wool Blazer</h3>
+            <p>Rp49.850.000</p>
+            <button>🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/tas.jpg">
+            <h3>Shoulder Bag</h3>
+            <p>Rp22.150.000</p>
+            <button>🛒</button>
+        </div>
+
+        </div>
+        
+            <h1>Make Up</h1>
+
+        <div class="kategori-container">
+
+        <div class="product-card">
+        <img src="images/cushion.jpg">
+        <h3>Touche Eclat Glow-Pact Cushion</h3>
+        <p>Rp1.300.000</p>
+        <button>🛒</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/lipstik.jpg">
+        <h3>Loveshine Wet Shine Lipstik</h3>
+        <p>Rp750.000</p>
+        <button>🛒</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/blushon.jpg">
+        <h3>Make Me Blush Bold Blurring Blush</h3>
+        <p>Rp1.090.000</p>
+        <button>🛒</button>
+    </div>
+    
+    </div>
+</section>
+
+<section class="pesanan" id="pesanan">
+
+    <div>
+        <h1>📦 Pesanan</h1>
+        <p>Kelola semua pesanan pelanggan.</p>
+    </div>
+
+
+    <div class="filter">
+    <input type="text" placeholder="Cari pesanan...">
+
+    <select>
+        <option>Semua Status</option>
+        <option>Pending</option>
+        <option>Diproses</option>
+        <option>Dikirim</option>
+        <option>Selesai</option>
+        <option>Dibatalkan</option>
+    </select>
+</div>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Customer</th>
+            <th>Produk</th>
+            <th>Total</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>#001</td>
+            <td>Ayumi</td>
+            <td>Lipstick</td>
+            <td>Rp750.000</td>
+            <td>Selesai</td>
+        </tr>
+
+        <tr>
+            <td>#002</td>
+            <td>Lulu</td>
+            <td>Shoulder bag</td>
+            <td>Rp22.150.000</td>
+            <td>Dipending</td>
+        </tr>
+
+        <tr>
+            <td>#003</td>
+            <td>Nadia</td>
+            <td>Cushion</td>
+            <td>Rp1.300.000</td>
+            <td>Dikirim</td>
+        </tr>
+    </table>
+</section>
+
+<section class="customer" id="customer">
+
+    <div>
+    <h1>Data Customer</h1>
+    <button>+ Tambah Customer</button>
+    </div>
+
+    <table>
+        <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>Pesanan</th>
+        <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Ayumi</td>
+            <td>ayuminh@gmail.com</td>
+            <td>Serum</td>
+            <td>Selesai</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Lulu</td>
+            <td>lulu@gmail.com</td>
+            <td>Lipstick</td>
+            <td>Diproses</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Nadia</td>
+            <td>nadiaa@gmail.com</td>
+            <td>Cushion</td>
+            <td>Pending</td>
+        </tr>
+    </table>
+</section>
+
+<section class="laporan" id="laporan">
+
+        <h1>📊 Laporan</h1>
+        <p>Ringkasan data customer dan pesanan</p>
+    
+        <div class="report-data">
+
+            <div>
+                <h3>Total Order</h3>
+                <h2>90</h2>
+            </div>
+
+            <div>
+                <h3>Pendapatan</h3>
+                <h2>Rp100.000.000</h2>
+            </div>
+
+            <div>
+                <h3>Customer</h3>
+                <h2>200</h2>
+            </div>
+        </div>
+
+
+        <h1>Laporan Pesanan</h1>
+
+        <table>
+            <tr>
+                <td>No</td>
+                <td>Customer</td>
+                <td>Produk</td>
+                <td>Total</td>
+                <td>Status</td>
+            </tr>
+
+            <tr>
+                <th>1</th>
+                <th>Ayumi</th>
+                <th>Serum</th>
+                <th>Rp1.600.000</th>
+                <th>Selesai</th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th>Lulu</th>
+                <th>Lipstick</th>
+                <th>Rp750.000</th>
+                <th>Selesai</th>
+            </tr>
+
+            <tr>
+                <th>3</th>
+                <th>Nadia</th>
+                <th>Cushion</th>
+                <th>Rp1.300.000</th>
+                <th>Selesai</th>
+            </tr>
+        </table>
+</section>
+
+</body>
+</html>
